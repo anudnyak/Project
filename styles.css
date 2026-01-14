@@ -1,1 +1,6 @@
 svg{width: 30px;}
+section,
+aside{}
+section{
+    padding-top: 2rem;
+}
