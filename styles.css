@@ -1,3 +1,21 @@
-svg{width: 30px;}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+}
+
 section,
-aside{padding-top: 2rem;}
+aside {
+  padding-top: 2rem;
+}
