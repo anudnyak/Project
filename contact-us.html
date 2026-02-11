@@ -4,10 +4,94 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="output.css" />
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <section>
+        <img src="images/square-sm.png" alt="Phone No" />
+        <p>250-337-2021</p>
+
+        <img src="images/square-sm.png" alt="Address" />
+        <address>1331 Williams Beach Road, Merville, BC</address>
+
+        <img src="images/square-sm.png" alt="Information" />
+      </section>
+
+      <!-- NAVBAR -->
+      <section>
+        <a href="index.html">
+          <img src="images/square-sm.png" alt="Logo" />
+        </a>
+        <button type="button">Menu</button>
+      </section>
+
+      <!-- MEGA MENU -->
+      <nav>
+        <section>
+          <img src="images/square-sm.png" alt="About Us" />
+          <p>About Us</p>
+          <ul>
+            <li><a href="about-us.html">What We Do</a></li>
+            <li><a href="our-team.html">Who We Are</a></li>
+            <li><a href="news.html">News</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="images/square-sm.png" alt="Wildlife Hospital" />
+          <p>Wildlife Hospital</p>
+          <ul>
+            <li><a href="emergency-info.html">Emergency Information</a></li>
+            <li><a href="about-the-hospital.html">About the Hospital</a></li>
+            <li><a href="birds.html">Admission Data</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="images/square-sm.png" alt="Visitor Centre" />
+          <p>Visitor Centre</p>
+          <ul>
+            <li><a href="visit-us.html">Visit Us</a></li>
+            <li><a href="gift-shop.html">Gift Shop</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="bird-visits.html">Ambassador Bird Visits</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="images/square-sm.png" alt="Support Us" />
+          <p>Support Us</p>
+          <ul>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="donate-funds.html">Donate Funds</a></li>
+            <li><a href="donate-goods.html">Donate Goods</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="images/square-sm.png" alt="Resources" />
+          <p>Resources</p>
+          <ul>
+            <li><a href="birds.html">Bird Safety</a></li>
+            <li><a href="native-plants.html">Native Plants</a></li>
+            <li><a href="tool-library.html">Tool Library</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="images/square-sm.png" alt="" />
+          <p><a href="gift-shop.html">Shop Online</a></p>
+        </section>
+
+        <section>
+          <img src="images/square-sm.png" alt="" />
+          <p><a href="contact-us.html">Contact Us</a></p>
+        </section>
+      </nav>
+    </header>
 
     <main>
       <h1>Contact Us</h1>
@@ -49,6 +133,68 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="bg-gray-100 text-gray-700 px-6 py-10">
+      <div
+        class="max-w-6xl mx-auto space-y-10 md:grid md:grid-cols-3 md:gap-10 md:space-y-0 md:items-start"
+      >
+        <section class="space-y-4">
+          <div class="space-y-2">
+            <img src="images/square-sm.png" alt="Logo" class="h-16 w-16" />
+            <img
+              src="images/square-sm.png"
+              alt="MARS Wildlife Rescue"
+              class="h-8 w-auto"
+            />
+          </div>
+
+          <div class="space-y-1 italic text-gray-600">
+            <address class="not-italic">1331 Williams Beach Road</address>
+            <address class="not-italic">Merville, BC</address>
+            <p>250-337-2021</p>
+          </div>
+        </section>
+
+        <section>
+          <div class="flex gap-4 pt-2">
+            <img src="images/square-sm.png" alt="Facebook" class="h-9 w-9" />
+            <img src="images/square-sm.png" alt="Instagram" class="h-9 w-9" />
+            <img src="images/square-sm.png" alt="YouTube" class="h-9 w-9" />
+          </div>
+        </section>
+
+        <section>
+          <div class="pt-4">
+            <p class="font-semibold text-gray-800">Mailing Address:</p>
+            <address class="not-italic italic text-gray-600">
+              P.O. Box 415, Merville, BC V0R 2M0
+            </address>
+          </div>
+        </section>
+
+        <section class="space-y-2">
+          <p class="font-semibold text-gray-800">Visitor Centre Hours</p>
+          <p class="italic text-gray-600">
+            Education Center, Gift Shop and Tours
+          </p>
+          <p>Friday - Saturday, 10:00 am to 3:00 pm</p>
+        </section>
+
+        <section class="space-y-2">
+          <p class="font-semibold text-gray-800">Wildlife Hospital Hours</p>
+          <p class="italic text-gray-600">Intake Only - No Visitors Please</p>
+          <p>Daily, 9:00 am - 5:00 pm</p>
+        </section>
+
+        <section class="md:col-span-3 pt-6 border-t border-gray-300">
+          <p class="text-gray-600 leading-relaxed">
+            We are grateful for the privilege to live, work, and play on the
+            unceded traditional territory of the K’ómoks First Nation and
+            acknowledge the rich culture of the Pentlatch, Sathloot
+            (‘sath-loot), Sasitla (sa-‘seet-la), Ieeksen (eye-‘ick-sun) and
+            Xa’xe (‘ha-hey) peoples.
+          </p>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
