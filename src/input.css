@@ -3,6 +3,36 @@
   --content-width: clamp (200px, 90%, 1440px);
   --font-headings: "PT Serif", serif;
   --font-body: "Atkinson Hyperlegible", sans-serif;
+
+  /* green */
+  --color-moss-300: oklch(0.7581 0.1008 109.22);
+  --color-moss-500: oklch(0.5443 0.0821 109.7);
+  --color-moss-700: oklch(0.3813 0.0532 108.68);
+
+  /* yellow */
+  --color-yolk-300: oklch(0.8834 0.1583 91.38);
+  --color-yolk-500: oklch(0.8303 0.166 87.4);
+  --color-yolk-700: oklch(0.6688 0.1201 84.55);
+
+  /* orange */
+  --color-tangerine-300: oklch(0.6746 0.155 45.62);
+  --color-tangerine-500: oklch(0.5754 0.1491 41.16);
+  --color-tangerine-700: oklch(0.4244 0.105 42.33);
+
+  /* pink */
+  --color-hotpink-300: oklch(0.6401 0.1801 6.16);
+  --color-hotpink-500: oklch(0.5268 0.1919 11.36);
+  --color-hotpink-700: oklch(0.3834 0.1349 10.34);
+
+  /* purple */
+  --color-grape-300: oklch(0.5197 0.1295 322.46);
+  --color-grape-500: oklch(0.3828 0.0897 322.22);
+  --color-grape-700: oklch(0.2654 0.0577 321.5);
+
+  /* blue */
+  --color-lake-300: oklch(0.6495 0.1271 235.17);
+  --color-lake-500: oklch(0.4507 0.0829 235.72);
+  --color-lake-700: oklch(0.3027 0.0527 230.76);
 }
 
 @layer base {
