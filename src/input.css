@@ -36,7 +36,7 @@
 }
 
 @layer base {
-  body{
+  body {
     @apply bg-stone-200 text-moss-700 text-base;
   }
   main {
@@ -66,7 +66,7 @@
     @apply font-body max-w-[60ch];
   }
 
-  .paragraph-short{
+  .paragraph-short {
     @apply max-w-[40ch];
   }
 
@@ -175,4 +175,7 @@
     @apply block h-fit py-2 px-8 border-[1.5px] border-moss-500 rounded-md bg-moss-500 text-white text-center text-sm font-bold uppercase cursor-pointer self-end md:w-fit hover:border-stone-500 hover:bg-transparent hover:text-stone-500;
   }
 
+  .btn-inverse {
+    @apply block h-fit py-2 px-8 border-[1.5px] border-stone-500 rounded-md bg-transparent text-stone-500 text-center text-sm font-bold uppercase cursor-pointer self-end md:w-fit hover:border-moss-500 hover:bg-moss-500 hover:text-white;
+  }
 }

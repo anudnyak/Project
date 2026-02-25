@@ -882,6 +882,44 @@
       width: fit-content;
     }
   }
+  .btn-inverse {
+    display: block;
+    height: fit-content;
+    cursor: pointer;
+    align-self: flex-end;
+    border-radius: var(--radius-md);
+    border-style: var(--tw-border-style);
+    border-width: 1.5px;
+    border-color: var(--color-stone-500);
+    background-color: transparent;
+    padding-inline: calc(var(--spacing) * 8);
+    padding-block: calc(var(--spacing) * 2);
+    text-align: center;
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-stone-500);
+    text-transform: uppercase;
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-moss-500);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-moss-500);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+    @media (width >= 48rem) {
+      width: fit-content;
+    }
+  }
 }
 @property --tw-translate-x {
   syntax: "*";
