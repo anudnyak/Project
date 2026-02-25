@@ -782,6 +782,20 @@
   }
 }
 @layer components {
+  .link {
+    cursor: pointer;
+    text-underline-offset: 4px;
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-color: var(--color-moss-500);
+      }
+    }
+  }
   .cls-1 {
     fill: var(--color-moss-500);
   }

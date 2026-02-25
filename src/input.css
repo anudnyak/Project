@@ -95,6 +95,10 @@
 }
 
 @layer components {
+  .link {
+    @apply cursor-pointer hover:underline hover:decoration-moss-500 underline-offset-4;
+  }
+
   .cls-1 {
     fill: var(--color-moss-500);
   }
