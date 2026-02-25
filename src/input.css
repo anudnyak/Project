@@ -36,7 +36,7 @@
 }
 
 @layer base {
-  BODY{
+  body{
     @apply bg-stone-200 text-moss-700 text-base;
   }
   main {
@@ -69,7 +69,7 @@
   .paragraph-short{
     @apply max-w-[40ch];
   }
-  
+
   svg {
     @apply w-12;
   }
