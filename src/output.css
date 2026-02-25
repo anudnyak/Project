@@ -16,13 +16,14 @@
     --color-stone-200: oklch(92.3% 0.003 48.717);
     --color-stone-300: oklch(86.9% 0.005 56.366);
     --color-stone-500: oklch(55.3% 0.013 58.071);
-    --color-stone-600: oklch(44.4% 0.011 73.639);
     --color-stone-800: oklch(26.8% 0.007 34.298);
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-6xl: 72rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
@@ -496,9 +497,6 @@
   .text-moss-700 {
     color: var(--color-moss-700);
   }
-  .text-stone-600 {
-    color: var(--color-stone-600);
-  }
   .uppercase {
     text-transform: uppercase;
   }
@@ -659,6 +657,26 @@
   }
 }
 @layer base {
+  BODY {
+    background-color: var(--color-stone-200);
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+    color: var(--color-moss-700);
+  }
+  main {
+    margin-inline: auto;
+    width: 100%;
+    @media (width >= 48rem) {
+      width: var(--content-width);
+    }
+    @media (width >= 48rem) {
+      border-inline-style: var(--tw-border-style);
+      border-inline-width: 1px;
+    }
+    @media (width >= 48rem) {
+      border-color: var(--color-stone-300);
+    }
+  }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-headings);
     --tw-font-weight: var(--font-weight-bold);
@@ -691,6 +709,9 @@
   p {
     max-width: 60ch;
     font-family: var(--font-body);
+  }
+  .paragraph-short {
+    max-width: 40ch;
   }
   svg {
     width: calc(var(--spacing) * 12);

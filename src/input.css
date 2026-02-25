@@ -36,6 +36,13 @@
 }
 
 @layer base {
+  BODY{
+    @apply bg-stone-200 text-moss-700 text-base;
+  }
+  main {
+    @apply w-full md:w-(--content-width) mx-auto md:border-x md:border-stone-300;
+  }
+
   h1,
   h2,
   h3,
@@ -58,6 +65,11 @@
   p {
     @apply font-body max-w-[60ch];
   }
+
+  .paragraph-short{
+    @apply max-w-[40ch];
+  }
+  
   svg {
     @apply w-12;
   }
@@ -162,4 +174,5 @@
   .btn {
     @apply block h-fit py-2 px-8 border-[1.5px] border-moss-500 rounded-md bg-moss-500 text-white text-center text-sm font-bold uppercase cursor-pointer self-end md:w-fit hover:border-stone-500 hover:bg-transparent hover:text-stone-500;
   }
+
 }
