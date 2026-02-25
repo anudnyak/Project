@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @theme {
-  --content-width: clamp (200px, 90%, 1440px);
+  --content-width: clamp(200px, 90%, 1440px);
   --font-headings: "PT Serif", serif;
   --font-body: "Atkinson Hyperlegible", sans-serif;
 
@@ -61,8 +61,101 @@
   svg {
     @apply w-12;
   }
+
+  mark {
+    color: white;
+    background-color: oklch(0.3813 0.0532 108.68);
+    opacity: 0.8;
+  }
+
+  /* light-mode / dark-mode */
+  html[data-theme="dark"] {
+    --color-moss-500: oklch(0.7581 0.1008 109.22);
+    --color-moss-700: oklch(86.9% 0.005 56.366);
+    --color-tangerine-500: oklch(0.6688 0.1201 84.55);
+    --color-white: oklch(14.5% 0 0); /* neutral-950 */
+    --color-stone-200: oklch(20.5% 0 0); /* neutral-900 */
+    --color-stone-50: oklch(26.9% 0 0); /* neutral-800 */
+    --color-stone-100: oklch(20.5% 0 0); /* neutral-900 */
+    --color-stone-300: oklch(37.1% 0 0); /* neutral-700 */
+    --color-stone-500: oklch(87% 0 0);
+  }
+}
+
+@layer components {
   .cls-1 {
-    fill: var(--color-teal-600);
-    /*fill: teal;*/
+    fill: var(--color-moss-500);
+  }
+
+  .cls-accent {
+    fill: var(--color-tangerine-500);
+  }
+
+  /* popovers */
+  .navbar {
+    anchor-name: --navbar;
+  }
+
+  #mega-menu__popover[popover] {
+    inset-block-start: anchor(--navbar bottom);
+  }
+
+  #alert__popover::backdrop,
+  #directions__popover::backdrop,
+  #hours__popover::backdrop {
+    @apply bg-stone-800/90;
+  }
+
+  /* light-mode / dark-mode */
+  .theme-toggle {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .theme-toggle input {
+    position: absolute;
+    inset: 0;
+
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .owl {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+  }
+
+  .icon-owls {
+    position: relative;
+    inline-size: 36px;
+    block-size: 36px;
+    margin-inline-start: 0.5rem;
+    transform: translateY(2px);
+  }
+
+  .icon-owls .owl {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+
+  .icon-owls .owl--a {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  header:has(#theme-toggle:checked) .icon-owls .owl--a {
+    opacity: 0;
+    pointer-events: none;
+  }
+  header:has(#theme-toggle:checked) .icon-owls .owl--b {
+    opacity: 1;
+    pointer-events: auto;
   }
 }

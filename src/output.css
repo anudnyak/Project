@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-teal-600: oklch(60% 0.118 184.704);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-600: oklch(44.6% 0.03 256.802);
@@ -17,6 +16,7 @@
     --color-stone-200: oklch(92.3% 0.003 48.717);
     --color-stone-300: oklch(86.9% 0.005 56.366);
     --color-stone-600: oklch(44.4% 0.011 73.639);
+    --color-stone-800: oklch(26.8% 0.007 34.298);
     --spacing: 0.25rem;
     --container-6xl: 72rem;
     --text-sm: 0.875rem;
@@ -41,10 +41,12 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --content-width: clamp (200px, 90%, 1440px);
+    --content-width: clamp(200px, 90%, 1440px);
     --font-headings: "PT Serif", serif;
     --font-body: "Atkinson Hyperlegible", sans-serif;
+    --color-moss-500: oklch(0.5443 0.0821 109.7);
     --color-moss-700: oklch(0.3813 0.0532 108.68);
+    --color-tangerine-500: oklch(0.5754 0.1491 41.16);
   }
 }
 @layer base {
@@ -690,8 +692,85 @@
   svg {
     width: calc(var(--spacing) * 12);
   }
+  mark {
+    color: white;
+    background-color: oklch(0.3813 0.0532 108.68);
+    opacity: 0.8;
+  }
+  html[data-theme="dark"] {
+    --color-moss-500: oklch(0.7581 0.1008 109.22);
+    --color-moss-700: oklch(86.9% 0.005 56.366);
+    --color-tangerine-500: oklch(0.6688 0.1201 84.55);
+    --color-white: oklch(14.5% 0 0);
+    --color-stone-200: oklch(20.5% 0 0);
+    --color-stone-50: oklch(26.9% 0 0);
+    --color-stone-100: oklch(20.5% 0 0);
+    --color-stone-300: oklch(37.1% 0 0);
+    --color-stone-500: oklch(87% 0 0);
+  }
+}
+@layer components {
   .cls-1 {
-    fill: var(--color-teal-600);
+    fill: var(--color-moss-500);
+  }
+  .cls-accent {
+    fill: var(--color-tangerine-500);
+  }
+  .navbar {
+    anchor-name: --navbar;
+  }
+  #mega-menu__popover[popover] {
+    inset-block-start: anchor(--navbar bottom);
+  }
+  #alert__popover::backdrop, #directions__popover::backdrop, #hours__popover::backdrop {
+    background-color: color-mix(in srgb, oklch(26.8% 0.007 34.298) 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-stone-800) 90%, transparent);
+    }
+  }
+  .theme-toggle {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+  }
+  .theme-toggle input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .owl {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+  }
+  .icon-owls {
+    position: relative;
+    inline-size: 36px;
+    block-size: 36px;
+    margin-inline-start: 0.5rem;
+    transform: translateY(2px);
+  }
+  .icon-owls .owl {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+  .icon-owls .owl--a {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  header:has(#theme-toggle:checked) .icon-owls .owl--a {
+    opacity: 0;
+    pointer-events: none;
+  }
+  header:has(#theme-toggle:checked) .icon-owls .owl--b {
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 @property --tw-translate-x {
