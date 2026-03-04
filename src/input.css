@@ -63,7 +63,7 @@
     @apply text-lg md:text-xl;
   }
   p {
-    @apply font-body max-w-[60ch];
+    @apply font-body max-w-[60ch] pt-4;
   }
 
   .paragraph-short {
