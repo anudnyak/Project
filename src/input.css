@@ -40,7 +40,7 @@
     @apply bg-stone-200 text-moss-700 text-base;
   }
   main {
-    @apply w-full md:w-[var(--content-width)] mx-auto md:border-x md:border-stone-300;
+    @apply w-full md:w-(--content-width) mx-auto md:border-x md:border-stone-300;
   }
 
   h1,
