@@ -465,8 +465,7 @@
             id="menu-toggle-desktop"
             popovertarget="mega-menu__popover"
             type="button"
-            class="btn"
-            class="hidden place-self-center md:block"
+            class="btn hidden place-self-center md:block"
             aria-label="Open menu"
           >
             Menu
@@ -860,8 +859,23 @@
     </header>
     <main>
       <h1>Native Plants</h1>
-      <section>
-        <h2>Resources to create healthy habitats with native plants.</h2>
+
+      <section class="pt-12">
+        <div class="grid gap-8 lg:grid-cols-2">
+          <div>
+            <h2>Resources to create healthy habitats with native plants.</h2>
+          </div>
+          <div>
+            <img
+              src="images/landscape-sm.png"
+              alt="Resources to create healthy habitats with native plants"
+              class="w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-12">
         <section>
           <h3>Books</h3>
           <ul>
@@ -887,7 +901,7 @@
             </li>
             <li>
               <a target="_blank" href="https://realgardensgrownatives.com/">
-                Real Gardens Grow Natives: Design, Plant, & Enjoy a Healthy
+                Real Gardens Grow Natives: Design, Plant, &amp; Enjoy a Healthy
                 Northwest Garden
               </a>
               by Eileen Stark (many links to resources from her website).
@@ -900,7 +914,7 @@
                 Native Plants in the Coastal Garden: A Guide for Gardeners in
                 B.C. and the Pacific Northwest
               </a>
-              (2002) by April Pettinger & Brenda Costanzo.
+              (2002) by April Pettinger &amp; Brenda Costanzo.
             </li>
             <li>
               <a
@@ -909,12 +923,13 @@
               >
                 Plants of the Pacific Northwest Coast
               </a>
-              by Jim Pojar & Andy McKinnon. The best guide for native plants on
-              this coast; includes Indigenous uses of plants.
+              by Jim Pojar &amp; Andy McKinnon. The best guide for native plants
+              on this coast; includes Indigenous uses of plants.
             </li>
           </ul>
         </section>
-        <section>
+
+        <section class="pt-12">
           <h3>Websites and Organizations</h3>
           <ul>
             <li>
@@ -945,11 +960,12 @@
               <a target="_blank" href="https://homegrownnationalpark.org/">
                 Homegrown National Park:
               </a>
-              across Canada & USA.
+              across Canada &amp; USA.
             </li>
           </ul>
         </section>
-        <section>
+
+        <section class="pt-12">
           <h3>Plant Guides for Eastern Vancouver Island</h3>
           <ul>
             <li>
@@ -989,7 +1005,8 @@
             </li>
           </ul>
         </section>
-        <section>
+
+        <section class="pt-12">
           <h3>Webinars, Recordings and Videos</h3>
           <ul>
             <li>
@@ -1032,7 +1049,8 @@
             </li>
           </ul>
         </section>
-        <section>
+
+        <section class="pt-12">
           <h3>Facebook Groups</h3>
           <ul>
             <li>
@@ -1071,7 +1089,8 @@
             </li>
           </ul>
         </section>
-        <section>
+
+        <section class="pt-12">
           <h3>Local Restoration Projects</h3>
           <ul>
             <li>Little River, Comox.</li>
@@ -1081,7 +1100,8 @@
             <li>MARS Wildlife Rescue, Merville.</li>
           </ul>
         </section>
-        <section>
+
+        <section class="pt-12">
           <h3>Local Groups</h3>
           <ul>
             <li>
@@ -1106,7 +1126,8 @@
             </li>
           </ul>
         </section>
-        <section>
+
+        <section class="pt-12">
           <h3>Is It a Native Plant?</h3>
           <ul>
             <li>
@@ -1118,9 +1139,9 @@
               </a>
               is the Electronic Atlas of the Flora of British Columbia. Page
               entries for each species have photo, distribution map,
-              illustration, description, habitat & range and status (native or
-              exotic, endangered etc.) Very useful in understanding what plants
-              grow here and under what conditions.
+              illustration, description, habitat &amp; range and status (native
+              or exotic, endangered etc.) Very useful in understanding what
+              plants grow here and under what conditions.
             </li>
             <li>
               See also
@@ -1134,7 +1155,8 @@
             </li>
           </ul>
         </section>
-        <section>
+
+        <section class="pt-12">
           <h3>Garden Design and Ecological Practices</h3>
           <ul>
             <li>
@@ -1154,8 +1176,8 @@
                 Naturescape British Columbia: Caring for Wildlife Habitat at
                 Home
               </a>
-              by Susan Campbell & Sylvia Pincott, 1995. This is an oldy but so
-              good–the information is unchanged over time!
+              by Susan Campbell &amp; Sylvia Pincott, 1995. This is an oldy but
+              so good–the information is unchanged over time!
             </li>
             <li>
               <a
@@ -1169,7 +1191,7 @@
           </ul>
         </section>
 
-        <section>
+        <section class="pt-12">
           <h3>
             Sources of Native Plants and Seeds for Eastern Vancouver Island
           </h3>
@@ -1180,73 +1202,93 @@
             cultivars and plant sterility, and aim to purchase the “wild type”
             or species.
           </p>
-          <section>
-            <img src="images/square-sm.png" alt="Satinflower Nursery" />
-            <h4>Satinflower Nursery</h4>
-            <p>
-              Satinflower Nursery in Saanich, Vancouver Island, provides plants,
-              seeds and consulting. Their website has excellent resources and
-              how-to guides.
-            </p>
-          </section>
 
-          <section>
-            <img src="images/square-sm.png" alt="Streamside Native Plants" />
-            <h4>Streamside Native Plants</h4>
-            <p>
-              Streamside Native Plants is in Bowser offers wholesale and retail
-              native forbs, grasses, shrubs, and trees. Check hours of
-              operation.
-            </p>
-          </section>
+          <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3 pt-8">
+            <section class="bg-white">
+              <img src="images/landscape-sm.png" alt="Satinflower Nursery" />
+              <div class="p-8">
+                <h4>Satinflower Nursery</h4>
+                <p>
+                  Satinflower Nursery in Saanich, Vancouver Island, provides
+                  plants, seeds and consulting. Their website has excellent
+                  resources and how-to guides.
+                </p>
+              </div>
+            </section>
 
-          <section>
-            <img src="images/square-sm.png" alt="Native Plant Nursery" />
-            <h4>Native Plant Nursery</h4>
-            <p>
-              Nanaimo Area Land Trust’s Native Plant Nursery is a volunteer-run
-              endeavor. They carry both seeds and plants. Check their hours of
-              operation before visiting.
-            </p>
-          </section>
+            <section class="bg-white">
+              <img
+                src="images/landscape-sm.png"
+                alt="Streamside Native Plants"
+              />
+              <div class="p-8">
+                <h4>Streamside Native Plants</h4>
+                <p>
+                  Streamside Native Plants is in Bowser offers wholesale and
+                  retail native forbs, grasses, shrubs, and trees. Check hours
+                  of operation.
+                </p>
+              </div>
+            </section>
 
-          <section>
-            <img src="images/square-sm.png" alt="Fraser’s Thimble Farm" />
-            <h4>Fraser’s Thimble Farm</h4>
-            <p>
-              Fraser’s Thimble Farm on Salt Spring Island has an extensive
-              native plant collection that includes trees, shrubs, forbs,
-              grasses, and ferns (as well as unusual exotics). They do ship.
-            </p>
-          </section>
+            <section class="bg-white">
+              <img src="images/landscape-sm.png" alt="Native Plant Nursery" />
+              <div class="p-8">
+                <h4>Native Plant Nursery</h4>
+                <p>
+                  Nanaimo Area Land Trust’s Native Plant Nursery is a
+                  volunteer-run endeavor. They carry both seeds and plants.
+                  Check their hours of operation before visiting.
+                </p>
+              </div>
+            </section>
 
-          <section>
-            <img src="images/square-sm.png" alt="On the Patio" />
-            <h4>On the Patio</h4>
-            <p>
-              On the Patio in Cedar (south of Nanaimo) carries over 75 native
-              plants. Contact them for availability. Open for in-person
-              shopping.
-            </p>
-          </section>
+            <section class="bg-white">
+              <img src="images/landscape-sm.png" alt="Fraser’s Thimble Farm" />
+              <div class="p-8">
+                <h4>Fraser’s Thimble Farm</h4>
+                <p>
+                  Fraser’s Thimble Farm on Salt Spring Island has an extensive
+                  native plant collection that includes trees, shrubs, forbs,
+                  grasses, and ferns (as well as unusual exotics). They do ship.
+                </p>
+              </div>
+            </section>
 
-          <section>
-            <img src="images/square-sm.png" alt="Kiki Nursery" />
-            <h4>Kiki Nursery</h4>
-            <p>
-              Kiki Nursery and Consulting in Ladysmith is in development and
-              plans to open soon.
-            </p>
-          </section>
+            <section class="bg-white">
+              <img src="images/landscape-sm.png" alt="On the Patio" />
+              <div class="p-8">
+                <h4>On the Patio</h4>
+                <p>
+                  On the Patio in Cedar (south of Nanaimo) carries over 75
+                  native plants. Contact them for availability. Open for
+                  in-person shopping.
+                </p>
+              </div>
+            </section>
 
-          <section>
-            <img src="images/square-sm.png" alt="Paradise Plants" />
-            <h4>Paradise Plants</h4>
-            <p>
-              Paradise Plants on Hardy Road in Courtenay has a selection of
-              native trees, shrubs, and ferns.
-            </p>
-          </section>
+            <section class="bg-white">
+              <img src="images/landscape-sm.png" alt="Kiki Nursery" />
+              <div class="p-8">
+                <h4>Kiki Nursery</h4>
+                <p>
+                  Kiki Nursery and Consulting in Ladysmith is in development and
+                  plans to open soon.
+                </p>
+              </div>
+            </section>
+
+            <section class="bg-white">
+              <img src="images/landscape-sm.png" alt="Paradise Plants" />
+              <div class="p-8">
+                <h4>Paradise Plants</h4>
+                <p>
+                  Paradise Plants on Hardy Road in Courtenay has a selection of
+                  native trees, shrubs, and ferns.
+                </p>
+              </div>
+            </section>
+          </div>
         </section>
       </section>
     </main>
@@ -1282,7 +1324,7 @@
         <section>
           <div class="pt-4">
             <p class="font-semibold text-gray-800">Mailing Address:</p>
-            <address class="not-italic italic text-gray-600">
+            <address class="not-italic text-gray-600">
               P.O. Box 415, Merville, BC V0R 2M0
             </address>
           </div>
