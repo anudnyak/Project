@@ -463,8 +463,7 @@
             id="menu-toggle-desktop"
             popovertarget="mega-menu__popover"
             type="button"
-            class="btn"
-            class="hidden place-self-center md:block"
+            class="btn hidden place-self-center md:block"
             aria-label="Open menu"
           >
             Menu
@@ -858,70 +857,108 @@
     </header>
     <main>
       <h1>News</h1>
-      <h2>Current News</h2>
-      <section>
-        <img src="images/square-sm.png" alt="Christmas Pop-Up Shop" />
-        <h3>Christmas Pop-Up Shop</h3>
-        <p>Fridays - Mondays 10-3</p>
-        <p>November 15 - December 23</p>
-        <a class="btn" href="#">Find the perfect gift!</a>
+
+      <section class="pt-12">
+        <h2>Current News</h2>
+
+        <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3 pt-8">
+          <section class="bg-white">
+            <img src="images/landscape-sm.png" alt="Christmas Pop-Up Shop" />
+            <div class="p-8">
+              <h3>Christmas Pop-Up Shop</h3>
+              <p>Fridays - Mondays 10-3</p>
+              <p>November 15 - December 23</p>
+              <a class="btn" href="#">Find the perfect gift!</a>
+            </div>
+          </section>
+
+          <section class="bg-white">
+            <img src="images/landscape-sm.png" alt="Winter Raffl e" />
+            <div class="p-8">
+              <h3>Winter Raffle</h3>
+              <p>October 1 - December 22</p>
+              <a class="btn" href="#">Get your tickets!</a>
+            </div>
+          </section>
+
+          <section class="bg-white">
+            <img src="images/landscape-sm.png" alt="Update on Avian Flu" />
+            <div class="p-8">
+              <h3>Update on Avian Flu</h3>
+              <p>
+                This highly pathogenic avian infl uenza aff ects how we intake
+                injured animals.
+              </p>
+              <a class="btn" href="#">Find out more</a>
+            </div>
+          </section>
+
+          <section class="bg-white">
+            <img
+              src="images/landscape-sm.png"
+              alt="Mars Garage Sale a Big Success"
+            />
+            <div class="p-8">
+              <h3>Mars Garage Sale a Big Success</h3>
+              <p>
+                MARS would like to thank everyone involved with the garage sale
+                from set-up to tearing down.
+              </p>
+              <a class="btn" href="#">Read more</a>
+            </div>
+          </section>
+
+          <section class="bg-white">
+            <img
+              src="images/landscape-sm.png"
+              alt="March is Baby Formula Month"
+            />
+            <div class="p-8">
+              <h3>March is Baby Formula Month</h3>
+              <p>
+                Spring is coming and so are baby mammals—and they need milk!
+              </p>
+              <a class="btn" href="#">Donate today</a>
+            </div>
+          </section>
+
+          <section class="bg-white">
+            <img src="images/landscape-sm.png" alt="Meet Us at Kitty Coleman" />
+            <div class="p-8">
+              <h3>Meet Us at Kitty Coleman</h3>
+              <p>
+                We're attending the Kitty Coleman Woodland Gardens Art Show this
+                year for the BC Day Weekend, July 31 - August 2.
+              </p>
+              <a class="btn" href="#">Join us</a>
+            </div>
+          </section>
+        </div>
       </section>
-      <section>
-        <img src="images/square-sm.png" alt="Winter Raffl e" />
-        <h3>Winter Raffle</h3>
-        <p>October 1 - December 22</p>
-        <a class="btn" href="#">Get your tickets!</a>
+
+      <section class="pt-12">
+        <h2>Newsletters</h2>
+
+        <section class="bg-white p-8 mt-8">
+          <form action="Sign up for our seasonal newsletter">
+            <p>
+              <label>First name</label><br />
+              <input type="text" name="first_name" />
+            </p>
+            <p>
+              <label>Last name</label><br />
+              <input type="text" name="last_name" />
+            </p>
+            <p>
+              <label>Email</label><br />
+              <input type="email" name="email" required />
+            </p>
+          </form>
+          <a class="btn" href="#">Submit</a>
+        </section>
       </section>
-      <section>
-        <img src="images/square-sm.png" alt="Update on Avian Flu" />
-        <h3>Update on Avian Flu</h3>
-        <p>
-          This highly pathogenic avian infl uenza aff ects how we intake injured
-          animals.
-        </p>
-        <a class="btn" href="#">Find out more</a>
-      </section>
-      <section>
-        <img src="images/square-sm.png" alt="Mars Garage Sale a Big Success" />
-        <h3>Mars Garage Sale a Big Success</h3>
-        <p>
-          MARS would like to thank everyone involved with the garage sale from
-          set-up to tearing down.
-        </p>
-        <a class="btn" href="#">Read more</a>
-      </section>
-      <section>
-        <img src="images/square-sm.png" alt="March is Baby Formula Month" />
-        <h3>March is Baby Formula Month</h3>
-        <p>Spring is coming and so are baby mammals—and they need milk!</p>
-        <a class="btn" href="#">Donate today</a>
-      </section>
-      <section>
-        <img src="images/square-sm.png" alt="Meet Us at Kitty Coleman" />
-        <h3>Meet Us at Kitty Coleman</h3>
-        <p>
-          We're attending the Kitty Coleman Woodland Gardens Art Show this year
-          for the BC Day Weekend, July 31 - August 2.
-        </p>
-        <a class="btn" href="#">Join us</a>
-      </section>
-      <h2>Newsletters</h2>
-      <form action="Sign up for our seasonal newsletter">
-        <p>
-          <label>First name</label><br />
-          <input type="text" name="first_name" />
-        </p>
-        <p>
-          <label>Last name</label><br />
-          <input type="text" name="last_name" />
-        </p>
-        <p>
-          <label>Email</label><br />
-          <input type="email" name="email" required />
-        </p>
-      </form>
-      <a class="btn" href="#">Submit</a>
-      <section>
+
+      <section class="pt-12">
         <h3>Previous Issues</h3>
         <a href="#">Fall 2024</a>
         <a href="#">Summer 2024</a>
@@ -932,7 +969,8 @@
         <a href="#">Fall 2022</a>
         <a href="#">Spring 2022</a>
       </section>
-      <section>
+
+      <section class="pt-12">
         <h2>Annual Reports</h2>
         <a href="#">2023-2024 Annual Report</a>
         <a href="#">2022-2023 Annual Report</a>
@@ -980,7 +1018,7 @@
         <section>
           <div class="pt-4">
             <p class="font-semibold text-gray-800">Mailing Address:</p>
-            <address class="not-italic italic text-gray-600">
+            <address class="not-italic text-gray-600">
               P.O. Box 415, Merville, BC V0R 2M0
             </address>
           </div>
