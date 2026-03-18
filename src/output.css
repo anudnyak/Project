@@ -594,6 +594,10 @@
     border-start-end-radius: var(--radius-xl);
     border-end-end-radius: var(--radius-xl);
   }
+  .rounded-r-xl {
+    border-top-right-radius: var(--radius-xl);
+    border-bottom-right-radius: var(--radius-xl);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
