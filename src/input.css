@@ -70,9 +70,7 @@
     @apply max-w-[40ch];
   }
 
-  svg {
-    @apply w-12;
-  }
+ 
 
   mark {
     color: white;
